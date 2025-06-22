@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Article Template</title>
+  <!--  Bootstrap 5  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!--  Bootstrap Icons  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <style>
+    /* ===== Custom styles ===== */
+    body {
+      background-color: #ffffff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* trending badge */
+    .badge-trending {
+      background: #215C5C;
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      border-radius: 0.25rem;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.75rem;
+    }
+
+    /* hero image */
+    .article-img {
+      width: 100%;
+      height: 400px; /* fixed height for consistent crop */
+      object-fit: cover;
+      border-radius: 0.25rem;
+    }
+
+    /* sidebar social buttons */
+    .sidebar-social .btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      border-radius: 50%;
+    }
+
+    /* bottom share icons */
+    .share-icons .btn {
+      margin-right: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <!-- ==========  Main Content  ========== -->
+      <div class="col-lg-8">
+        <!-- Trending badge + meta info -->
+        <div class="d-flex align-items-center mb-3">
+          <span class="badge badge-trending me-3">Kegiatan</span>
+          <small class="text-muted">22-06-2025</small>
+        </div>
+
+        <!-- Hero / featured image -->
+        <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&w=1200&q=80" alt="featured" class="article-img mb-4" />
+
+        <!-- Article heading -->
+        <h1 class="fw-bold mb-4">Ini adalah Judul ya</h1>
+
+        <!-- Article body (paragraphs) -->
+        <p>
+         Unit Pengelola Kegiatan (UPK) di wilayah Desa Purworejo kembali melaksanakan kegiatan rutin dalam rangka mendukung peningkatan kesejahteraan masyarakat melalui program-program pemberdayaan ekonomi. Dalam kegiatan kali ini, UPK memfasilitasi pertemuan dengan kelompok peminjam UEP (Usaha Ekonomi Produktif) dan SPP (Simpan Pinjam Perempuan), membahas evaluasi pinjaman berjalan, serta strategi pengembangan usaha ke depan. Kegiatan ini menjadi wadah komunikasi yang efektif antara pengelola dan masyarakat untuk menjaga kelancaran program.
+        </p>
+
+        <p>
+         Selain diskusi evaluasi, UPK juga menghadirkan sesi pelatihan kewirausahaan yang diikuti oleh anggota kelompok binaan. Pelatihan ini bertujuan meningkatkan kapasitas pelaku usaha mikro agar lebih mandiri dan kompetitif. Diharapkan dengan adanya kegiatan ini, tidak hanya menguatkan sistem pengelolaan dana bergulir, tetapi juga memperkuat solidaritas dan keberdayaan kelompok dalam menggerakkan ekonomi lokal secara berkelanjutan.
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
