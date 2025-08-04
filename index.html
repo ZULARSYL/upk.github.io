@@ -62,22 +62,43 @@
           <!-- End Logo-->
           
           <!-- Start offcanvas-->
-          <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
-            
-            
-            <div class="offcanvas-body align-items-lg-center">
-              
-              
-              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+          <!-- Start offcanvas-->
+        <div class="offcanvas offcanvas-start w-75" id="fbs__net-navbars" tabindex="-1" aria-labelledby="fbs__net-navbarsLabel">
+          <!-- Modal BUtton Login-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tombol Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display : flex; justify-content: space-around;">
+                  <a href="<?= BASEURL; ?>Login/"><button type="button" class="btn btn-primary">Login Manajemen</button></a>
+                  <a href="https://klakah.siupk.net/"><button type="button" class="btn btn-primary">Login SIUPK</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="offcanvas-body align-items-lg-center">
+
+            <div class="d-flex w-100 align-items-center">
+              <!-- Bagian kiri (nav links) -->
+              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0" style="z-index: -3;">
                 <li class="nav-item"><a class="nav-link scroll-link active" aria-current="page" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link scroll-link" href="#tentang">Tentang</a></li>
                 <li class="nav-item"><a class="nav-link scroll-link" href="#news">Berita</a></li>
                 <li class="nav-item"><a class="nav-link scroll-link" href="#alur">Alur Peminjaman</a></li>
                 <li class="nav-item"><a class="nav-link scroll-link" href="#layanan">Layanan</a></li>
               </ul>
-              
+
+              <!-- Bagian kanan (button) -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
             </div>
+
           </div>
+        </div>
           <!-- End offcanvas-->
            <div class="ms-auto w-auto">
             <div class="header-social d-flex align-items-center gap-1">              
